@@ -124,6 +124,7 @@
     "typescript": "~1.8.9",
     "typings": "^0.7.9",
     "url-loader": "^0.5.7",
+    "wallaby-webpack": "*",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1",
     "webpack-md5-hash": "^0.0.5",
