@@ -9,7 +9,8 @@ var webpackPostprocessor = wallabyWebpack({
   module: {
     loaders: [
       {test: /\.css$/, loader: 'raw-loader'},
-      {test: /\.html$/, loader: 'raw-loader'}
+      {test: /\.html$/, loader: 'raw-loader'},
+      {test: /karma-require/, loader: 'null'}
     ]
   }
 });
@@ -19,6 +20,7 @@ module.exports = function () {
   return {
     files: [
       {pattern: 'config/spec-bundle.js', load: false},
+      {pattern: 'config/karma-require.js', load: false},
       {pattern: 'src/**/*.ts', load: false},
       {pattern: 'src/**/*.css', load: false},
       {pattern: 'src/**/*.html', load: false},
